@@ -16,3 +16,4 @@
 - [Activity 2](https://cs.pol.pm/vanillajs2.html)
 - [Control Statements - Activity 1](https://cs.pol.pm/vjscsa1.html)
 - [Control Statements - Activity 2](https://cs.pol.pm/vjscsa2.html)
+- [Vanilla JS Loops - Activity 1](https://cs.pol.pm/vjsloopsa1.html)
