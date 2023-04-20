@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vanilla JS Arrays - Activity 2</title>
+    </head>
+<body>
+    <h1>Vanilla JS Arrays - Activity 2</h1>
+  <p>Write a JavaScript program to calculate the average value of an array elements.</p>
+<pre>Test Data:
+
+Sample Array:
+
+[20, 30, 25, 35, -16, 60, -100]
+
+Expected Output:
+
+Average value of the array elements is : 7.7.</pre>
+  <p>Average value of the array elements is:
+    <script>
+    const sample = [20, 30, 25, 35, -16, 60, -100];
+    let len = sample.length;
+    let sum = 0;
+
+	// looping from i = 0 to len    
+	for (let i = 0; i < len; i++) {
+    	sum += sample[i];
+	}
+
+    let avg = sum/len;
+
+    document.write(avg.toFixed(1));
+
+    </script>.</p>
+
+</body>
+</html>
