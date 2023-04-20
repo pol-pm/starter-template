@@ -5,18 +5,20 @@
     </head>
 <body>
     <h1>Activity 2</h1>
+    <div>
     <p>Write a JavaScript program to divide two numbers, using the input from the user, and print the result on the screen.</p>
-
+    </div><div>
     <script>
         let num1 = prompt("Input the first number: ");
         let num2 = prompt("Input the second number: ")
 
         if ((isNaN(num1)) || (isNaN(num2)) || (isNaN(num1)) && (isNaN(num2))) {
-            document.write("Please input numbers.<br />");
+            document.write("<p>Please input numbers.<br /></p>");
         } else {
-            document.write("The division of the first number and the second number is: "+(num1/num2));
+            document.write("<p>The division of the first number and the second number is: "+(num1/num2)+".</p>");
         }
     </script>
+    </div>
 
 </body>
 </html>
