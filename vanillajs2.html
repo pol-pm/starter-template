@@ -11,8 +11,8 @@
         let num1 = prompt("Input the first number: ");
         let num2 = prompt("Input the second number: ")
 
-        if ((isNaN(num1)) || (isNaN(num2))) {
-            document.write(num1 + " is not a number <br/>");
+        if ((isNaN(num1)) || (isNaN(num2)) || (isNaN(num1)) && (isNaN(num2))) {
+            document.write("Please input numbers.<br />");
         } else {
             document.write("The division of the first number and the second number is: "+(num1/num2));
         }
