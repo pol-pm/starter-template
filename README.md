@@ -10,3 +10,6 @@
 - [Carousel](https://pol-pm.github.io/starter-template/carousel.html)
 - [Cards](https://pol-pm.github.io/starter-template/card.html)
 - [Form](https://pol-pm.github.io/starter-template/form.html)
+
+### Vanilla JS
+- [Activity 1](https://pol-pm.github.io/starter-template/vanillajs1.html)
