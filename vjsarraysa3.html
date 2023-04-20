@@ -21,6 +21,12 @@ Maximum value for the above array = 77
 Minimum value for the above array = 14</pre>
     <script>
     const sample = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+	let len = sample.length-1;
+	// add a simple sort and first and last value based on length
+    sample.sort();
+	
+    document.write("<p>Max = "+sample[len]+"</p>");
+    document.write("<p>Min = "+sample[0])+"</p>";
 
     document.write("<p>Maximum value for the above array = "+Math.max.apply(null, sample));
     document.write("<p>Minimum value for the above array = "+Math.min.apply(null, sample));
