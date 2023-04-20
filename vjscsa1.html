@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vanilla JS - Control Statements - Activity 1</title>
+    </head>
+<body>
+    <h1>Control Statements - Activity 1</h1>
+    <p>Write a JavaScript program that accepts three numbers and prints "All numbers are equal" if all three numbers are equal, "All numbers are different" if all three numbers are different and "Neither all are equal or different" otherwise.</p>
+
+<pre>Test Data:
+
+Input first number: 2
+Input second number: 3
+Input third number: 4
+
+Expected Output :
+
+All numbers are different.</pre>
+  	<p>My output: <strong>
+    <script>
+        let num1 = Number(prompt("Input the first number: "));
+        let num2 = Number(prompt("Input the second number: "));
+        let num3 = Number(prompt("Input the third number: "));
+
+        if ((num1==num2) && (num2==num3)) {
+            document.write("All numbers are equal");
+        } else if ((num1!=num2) && (num2!=num3)) {
+            document.write("All numbers are different");
+        } else {
+            document.write("Neither all are equal or different");
+        }
+      </script>.</strong></p>
+
+</body>
+</html>
