@@ -20,3 +20,4 @@
 - [Vanilla JS Loops - Activity 2](https://cs.pol.pm/vjsloopsa2.html)
 - [Vanilla JS Arrays - Activity 1](https://cs.pol.pm/vjsarraysa1.html)
 - [Vanilla JS Arrays - Activity 2](https://cs.pol.pm/vjsarraysa2.html)
+- [Vanilla JS Arrays - Activity 3](https://cs.pol.pm/vjsarraysa3.html)
