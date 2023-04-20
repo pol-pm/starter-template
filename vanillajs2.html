@@ -12,8 +12,10 @@
         let num1 = prompt("Input the first number: ");
         let num2 = prompt("Input the second number: ")
 
-        if ((isNaN(num1)) || (isNaN(num2)) || (isNaN(num1)) && (isNaN(num2))) {
-            document.write("<p>Please input numbers.<br /></p>");
+        if (((isNaN(num1)) || (isNaN(num2))) || ((isNaN(num1)) && (isNaN(num2)))) {
+            document.write("<p>Please input numbers.</p>");
+        } else if (num2 == 0) {
+            document.write("<p>We can't divide by zero!</p>");
         } else {
             document.write("<p>The division of the first number and the second number is: "+(num1/num2)+".</p>");
         }
