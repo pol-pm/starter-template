@@ -13,3 +13,4 @@
 
 ### Vanilla JS
 - [Activity 1](https://cs.pol.pm/vanillajs1.html)
+- [Activity 2](https://cs.pol.pm/vanillajs2.html)
