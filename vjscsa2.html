@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vanilla JS - Control Statements - Activity 2</title>
+    </head>
+<body>
+    <h1>Control Statements - Activity 2</h1>
+    <p>Write a JavaScript program that accepts three numbers from the user and prints "Increasing order" if the numbers are in the increasing order, "Decreasing order" if the numbers are in the decreasing order, and "Neither increasing or decreasing order" otherwise.</p>
+
+<pre>Test Data:
+
+Input first number: 1524
+Input second number: 2345
+Input third number: 3321</pre>
+<p>Expected Output: Increasing order.</p>
+  	<p>My output: <strong>
+    <script>
+        let num1 = Number(prompt("Input the first number: "));
+        let num2 = Number(prompt("Input the second number: "));
+        let num3 = Number(prompt("Input the third number: "));
+
+        if ((num1<num2) && (num2<num3) ) {
+            document.write("Increasing order");
+        } else if ((num1>num2) && (num2>num3)) {
+            document.write("Decreasing order");
+        } else {
+            document.write("Neither increasing or decreasing order");
+        }
+      </script>.</strong></p>
+
+</body>
+</html>
