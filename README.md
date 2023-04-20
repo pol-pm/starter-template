@@ -9,3 +9,4 @@
 - [Navbar](https://pol-pm.github.io/starter-template/navbar.html)
 - [Carousel](https://pol-pm.github.io/starter-template/carousel.html)
 - [Cards](https://pol-pm.github.io/starter-template/card.html)
+- [Form](https://pol-pm.github.io/starter-template/form.html)
