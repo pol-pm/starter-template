@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vanilla JS Loops - Activity 1</title>
+    </head>
+<body>
+    <h1>Vanilla JS Loops - Activity 1</h1>
+    <p>Write a JavaScript program that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.</p>
+<pre>Expected Output:
+
+"0 is even"
+"1 is odd"
+"2 is even"</pre>
+  <p>My output:</p>
+    <script>
+     // program to display text 5 times
+	const n = 15;
+
+	// looping from i = 0 to 15
+	for (let i = 0; i <= n; i++) {
+    	document.write("<div>"+i+" is ");
+      	if ((i % 2) == 0) {
+          document.write("even.</div>");
+        }
+      else {
+        document.write("odd.</div>");
+      }
+	}
+  </script>
+
+</body>
+</html>
