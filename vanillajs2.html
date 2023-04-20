@@ -8,9 +8,14 @@
     <p>Write a JavaScript program to divide two numbers, using the input from the user, and print the result on the screen.</p>
 
     <script>
-        prompt('Input the first number: ',a);
-        prompt('Input the second number: ',b);
-        alert(a+b);
+        let num1 = prompt("Enter the first number: ");
+        let num2 = prompt("Enter the second number: ")
+
+        if ((isNaN(num1)) || (isNaN(num2))) {
+            document.write(num1 + " is not a number <br/>");
+        } else {
+        alert(a/b);
+        }
     </script>
 
 </body>
