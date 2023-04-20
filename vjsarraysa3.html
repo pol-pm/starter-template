@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Vanilla JS Arrays - Activity 3</title>
+    </head>
+<body>
+    <h1>Vanilla JS Arrays - Activity 3</h1>
+  <p>Write a JavaScript program to calculate the average value of an array elements.</p>
+<pre>Test Data:
+
+Sample Array:
+
+[25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
+
+Expected Output:
+
+Original Array: [25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
+
+Maximum value for the above array = 77
+
+Minimum value for the above array = 14</pre>
+    <script>
+    const sample = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+
+    document.write("<p>Maximum value for the above array = "+Math.max.apply(null, sample));
+    document.write("<p>Minimum value for the above array = "+Math.min.apply(null, sample));
+    </script>
+
+</body>
+</html>
