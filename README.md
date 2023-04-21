@@ -22,6 +22,9 @@
 - [Vanilla JS Arrays - Activity 2](https://cs.pol.pm/vjsarraysa2.html)
 - [Vanilla JS Arrays - Activity 3](https://cs.pol.pm/vjsarraysa3.html)
 
+## CodeSpace
+- [Challenge 1](https://cs.pol.pm/codespace.html)
+
 ## Tools
 - [GitHub Desktop](https://desktop.github.com/)
 - [XAMPP](https://www.apachefriends.org/index.html)
