@@ -1,48 +1,54 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Vanilla JS Functions - Activity 1</title>
-    </head>
+
+<head>
+  <title>Vanilla JS Functions - Activity 1</title>
+</head>
+
 <body>
-    <h1>Vanilla JS Functions - Activity 1</h1>
-  <p>Write 2 JavaScript functions to:<ul>
-  <li>show the array content,</li>
-  <li>find the max value in the array.</li></ul></p>
-<pre>Sample Array : [10, 2, 3, 4, 7]
+  <h1>Vanilla JS Functions - Activity 1</h1>
+  <p>Write 2 JavaScript functions to:
+  <ul>
+    <li>show the array content,</li>
+    <li>find the max value in the array.</li>
+  </ul>
+  </p>
+  <pre>Sample Array : [10, 2, 3, 4, 7]
 
 Expected Output :
 
 The content of the array is: [10, 2, 3, 4, 7]
 
 The max value in the array is: 10</pre>
-    <script>
+  <script>
     const sample = [10, 2, 3, 4, 7];
 
     function printarray(arr) {
-      	let len = arr.length;
-      	var stringarr = "[";
-      	// document.write("[");
-    	for (let i = 0; i < len-1; i++) {
-          	stringarr += arr[i];
-          	stringarr += ", ";
-    		// document.write(arr[i]+", ");
-		}
-      	stringarr += arr[len-1];
-      	stringarr += "]";
-        // document.write(arr[len-1]+"]");
-      	return stringarr;
+      let len = arr.length;
+      var stringarr = "[";
+      // document.write("[");
+      for (let i = 0; i < len - 1; i++) {
+        stringarr += arr[i];
+        stringarr += ", ";
+        // document.write(arr[i]+", ");
+      }
+      stringarr += arr[len - 1];
+      stringarr += "]";
+      // document.write(arr[len-1]+"]");
+      return stringarr;
     }
-    
+
     function whatMax(array) {
-    	return Math.max.apply(null, array);
-	}
+      return Math.max.apply(null, array);
+    }
 
     document.write("<p>The content of array is: ");
     document.write(printarray(sample));
     Math.max.apply(sample);
-    document.write("</p><p>The max value in the array is: "+whatMax(sample));
+    document.write("</p><p>The max value in the array is: " + whatMax(sample));
 
-    </script>.</p>
+  </script>.</p>
 
 </body>
+
 </html>

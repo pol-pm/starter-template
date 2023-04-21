@@ -21,6 +21,7 @@
 - [Vanilla JS Arrays - Activity 1](https://cs.pol.pm/vjsarraysa1.html)
 - [Vanilla JS Arrays - Activity 2](https://cs.pol.pm/vjsarraysa2.html)
 - [Vanilla JS Arrays - Activity 3](https://cs.pol.pm/vjsarraysa3.html)
+- [Vanilla JS Functions - Activity 1](https://cs.pol.pm/vjsfunca1.html)
 
 ## Tools
 - [GitHub Desktop](https://desktop.github.com/)
