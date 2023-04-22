@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Vanilla JS Functions - Activity 3</title>
+</head>
+
+<body>
+  <h1>Vanilla JS Functions - Activity 3</h1>
+  <p>Write a JavaScript function that takes a number as a parameter and check the number is prime or not.</p>
+  <p><u>Note:</u></p>
+  <p>Prime numbers are the numbers that are only divisible by themselves and 1, in other words, if we try to divide them
+    by another number, the result is not a whole number.</p>
+  <p>So, if we divide the number by anything other than 1 or itself, we will get a remainder that is not zero.</p>
+  <p>Negative numbers can not be prime.</p>
+  <p>
+    <script>
+      // program to check if a number is prime or not
+
+      // take input from the user
+      let askPrime = prompt("Enter a non-negative number: ");
+
+      function fPrime(number) {
+        let isPrime = true;
+        // check if number is equal to 1
+        if (number === 1) {
+          return "1 is neither prime nor composite number.";
+        }
+        // check if number is greater than 1
+        else if (number > 1) {
+
+          // looping through 2 to number-1
+          for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+              isPrime = false;
+              break;
+            }
+          }
+
+          if (isPrime) {
+            return number + " is a prime number";
+          } else {
+            return number + " is a not prime number";
+          }
+        }
+        // check if number is less than 1
+        else {
+          return "The number is not a prime number.";
+        }
+      }
+
+      document.write(fPrime(askPrime));
+    </script>.
+  </p>
+
+</body>
+
+</html>
