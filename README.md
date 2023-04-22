@@ -23,6 +23,7 @@
 - [Vanilla JS Arrays - Activity 3](https://cs.pol.pm/vjsarraysa3.html)
 - [Vanilla JS Functions - Activity 1](https://cs.pol.pm/vjsfunca1.html)
 - [Vanilla JS Functions - Activity 2](https://cs.pol.pm/vjsfunca2.html)
+- [Vanilla JS Functions - Activity 3](https://cs.pol.pm/vjsfunca3.html)
 
 ## CodeSpace
 - [Challenge 1](https://cs.pol.pm/codespace.html)
