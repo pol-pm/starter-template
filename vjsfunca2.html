@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Vanilla JS Functions - Activity 2</title>
+</head>
+
+<body>
+  <h1>Vanilla JS Functions - Activity 2</h1>
+  <p>Write a JavaScript function to calculate the factorial of a number (a non-negative integer n ). The function
+    accepts the number as an argument.</p>
+  <p><u>Note:</u></p>
+  <p>The factorial of a number is the product of all the integers from 1 to that number and it is represented by n!</p>
+  <p>For example, the factorial of 6! is 1*2*3*4*5*6 = 720.</p>
+
+  <p>The factorial is not defined for negative numbers, and the factorial of zero is one, 0! = 1.</p>
+
+  <p>
+    <script>
+      let ask_fact = prompt("Enter a non-negative number: ");
+
+      function factorial(number) {
+        if (number < 0) { return "The factorial is not defined for negative numbers" }
+        else if (number == 0) { return "The factorial of " + number + " = 1" }
+        else {
+          let fact = 1;
+          for (let i = 1; i <= number; i++) {
+            fact *= i;
+          }
+          return "The factorial of " + number + " = " + fact;
+        }
+      }
+
+      document.write(factorial(ask_fact));
+    </script>.
+  </p>
+
+</body>
+
+</html>
