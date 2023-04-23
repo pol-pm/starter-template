@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8 />
+    <title>Activity 2 - Vanilla JS DOM</title>
+</head>
+
+<body>
+    <p id="text">Volume of a sphere</p>
+    <form>
+        <label for="radius">Enter radius: </label>
+        <input type="number" id="rad" name="radius" placeholder="Enter radius *" required>
+        <input type="button" onClick="volumeOfSphere()" value="Calculate volume">
+    </form>
+    <script>
+        function volumeOfSphere() {
+            r = document.getElementById("rad").value;
+            if (r > 0) {
+                let volume = ((4 / 3) * Math.PI * Math.pow(r, 3));
+                volume = Math.round(volume * 100) / 100
+                document.getElementById("text").innerHTML = "Volume of the sphere wwith a radius of " + r + " = " + volume + ".";
+            }
+            else {
+                document.getElementById("text").innerHTML = "The radius should be positive.";
+            }
+        }
+    </script>
+</body>
+
+</html>

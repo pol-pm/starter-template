@@ -25,6 +25,7 @@
 - [Vanilla JS Functions - Activity 2](https://cs.pol.pm/vjsfunca2.html)
 - [Vanilla JS Functions - Activity 3](https://cs.pol.pm/vjsfunca3.html)
 - [Vanilla JS DOM - Activity 1](https://cs.pol.pm/vjsdoma1.html)
+- [Vanilla JS DOM - Activity 2](https://cs.pol.pm/vjsdoma2.html)
 
 ## CodeSpace
 - [Challenge 1](https://cs.pol.pm/codespace.html)
