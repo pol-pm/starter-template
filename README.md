@@ -31,6 +31,6 @@
 - [Challenge 1](https://cs.pol.pm/codespace.html)
 
 ## Tools
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [GitHub Desktop](https://desktop.github.com/)
 - [XAMPP](https://www.apachefriends.org/index.html)
-- [Visual Studio Code](https://code.visualstudio.com/)
