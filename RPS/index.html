@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS Game</title>
+    <style>
+      .options {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Buttons -->
+    <div class="options">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+
+    <!-- Info -->
+    <h2>Your Option: <span id="user-option">...</span></h2>
+    <h2>Computer Option: <span id="computer-option">...</span></h2>
+    <h2>Result: <span id="result">...</span></h2>
+
+    <script>
+      // Get the buttons
+      const rockBtn = document.getElementById("rock");
+      const paperBtn = document.getElementById("paper");
+      const scissorsBtn = document.getElementById("scissors");
+
+      // Get the spans
+      const userOptionSpan = document.getElementById("user-option");
+      const computerOptionSpan = document.getElementById("computer-option");
+      const resultSpan = document.getElementById("result");
+
+      // Define the options
+      const options = ["Rock", "Paper", "Scissors"];
+
+      // Add click events to the buttons
+      rockBtn.addEventListener("click", function () {
+        playGame(options[0]);
+        // userOptionSpan.innerHTML = options[0];
+      });
+      paperBtn.addEventListener("click", function () {
+        playGame(options[1]);
+        // userOptionSpan.innerHTML = options[1];
+      });
+      scissorsBtn.addEventListener("click", function () {
+        playGame(options[2]);
+        // userOptionSpan.innerHTML = options[2];
+      });
+
+      // Play the game function
+      function playGame(userOption) {
+        // Get the computer option
+        const computerOption =
+          options[Math.floor(Math.random() * options.length)];
+
+        // Set the user option
+        userOptionSpan.innerHTML = userOption;
+
+        // Set the computer option
+        computerOptionSpan.innerHTML = computerOption;
+
+        // Compare the options
+        // A draw
+        if (userOption === computerOption) {
+          resultSpan.innerHTML = "It is a tie!";
+        }
+
+        // Rock Vs Scissors
+        else if (userOption === "Rock" && computerOption === "Scissors") {
+          resultSpan.innerHTML = "You win!";
+        }
+
+        // Paper Vs Rock
+        else if (userOption === "Paper" && computerOption === "Rock") {
+          resultSpan.innerHTML = "You win!";
+        }
+
+        // Scissors Vs Paper
+        else if (userOption === "Scissors" && computerOption === "Paper") {
+          resultSpan.innerHTML = "You win!";
+        }
+
+        // Otherwise
+        else {
+          resultSpan.innerHTML = "You lose!";
+        }
+      }
+    </script>
+  </body>
+</html>
