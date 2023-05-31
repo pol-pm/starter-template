@@ -12,21 +12,21 @@
       }
     </style>
   </head>
-
   <body>
-    <!-- Buttons -->
-    <!-- added best practices attribute for div -->
-    <div class="options" data-cy="best-practices-selecting-elements">
-      <!-- added best practices attributes to insulate them from all changes -->
-      <button id="rock" data-cy="rock">Rock</button>
-      <button id="paper" data-cy="paper">Paper</button>
-      <button id="scissors" data-cy="scissors">Scissors</button>
+    <!--Buttons-->
+    <div class="options">
+      <button data-cy="rock" id="rock">Rock</button>
+      <button data-cy="paper" id="paper">Paper</button>
+      <button data-cy="scissors" id="scissors">Scissors</button>
     </div>
-
-    <!-- Info -->
-    <h2>Your Option: <span id="user-option">...</span></h2>
-    <h2>Computer Option: <span id="computer-option">...</span></h2>
-    <h2>Result: <span id="result">...</span></h2>
+    <br />
+    <!--Info-->
+    <h2>Your Option: <span data-cy="user-option" id="user-option"></span></h2>
+    <h2>
+      Computer Option:
+      <span data-cy="computer-option" id="computer-option"></span>
+    </h2>
+    <h2>Result: <span data-cy="result" id="result"></span></h2>
 
     <script>
       // Get the buttons
@@ -43,27 +43,26 @@
       const options = ["Rock", "Paper", "Scissors"];
 
       // Add click events to the buttons
-      rockBtn.addEventListener("click", function () {
-        playGame(options[0]);
-        // userOptionSpan.innerHTML = options[0];
-      });
+      rockBtn.addEventListener("click", () => playGame(options[0]));
+
+      // Add click events to the buttons
       paperBtn.addEventListener("click", function () {
         playGame(options[1]);
-        // userOptionSpan.innerHTML = options[1];
-      });
-      scissorsBtn.addEventListener("click", function () {
-        playGame(options[2]);
-        // userOptionSpan.innerHTML = options[2];
       });
 
-      // Play the game function
+      // Add click events to the buttons
+      scissorsBtn.addEventListener("click", function () {
+        playGame(options[2]);
+      });
+
+      // Function play game
       function playGame(userOption) {
+        // Set the user option
+        userOptionSpan.innerHTML = userOption;
+
         // Get the computer option
         const computerOption =
           options[Math.floor(Math.random() * options.length)];
-
-        // Set the user option
-        userOptionSpan.innerHTML = userOption;
 
         // Set the computer option
         computerOptionSpan.innerHTML = computerOption;
@@ -73,22 +72,18 @@
         if (userOption === computerOption) {
           resultSpan.innerHTML = "It is a tie!";
         }
-
         // Rock Vs Scissors
         else if (userOption === "Rock" && computerOption === "Scissors") {
           resultSpan.innerHTML = "You win!";
         }
-
         // Paper Vs Rock
         else if (userOption === "Paper" && computerOption === "Rock") {
           resultSpan.innerHTML = "You win!";
         }
-
         // Scissors Vs Paper
         else if (userOption === "Scissors" && computerOption === "Paper") {
           resultSpan.innerHTML = "You win!";
         }
-
         // Otherwise
         else {
           resultSpan.innerHTML = "You lose!";

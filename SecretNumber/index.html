@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Number Guessing Game</title>
+  </head>
+  <body>
+    <h1>Secret Number Guessing Game</h1>
+    <p>Guess the secret number between 1 and 10. You have 3 attempts.</p>
+
+    <!-- User input and buttons -->
+    <div>
+      Your guess: <input type="number" id="userGuess" min="1" max="10" />
+      <button onclick="guessNumber()">Submit Guess</button>
+      <button onclick="resetGame()">Reset Game</button>
+      <!-- Display messages to the user (guidance, errors, success) -->
+      <p id="message"></p>
+    </div>
+
+    <script>
+      // Variables for storing secret number and attempts
+      let secretNumber;
+      let attempts;
+
+      // Initialize game by setting secret number, resetting attempts, and clearing message
+      function initGame() {
+        secretNumber = Math.floor(Math.random() * 10) + 1;
+        attempts = 3;
+        document.getElementById("message").innerHTML = "";
+        document.getElementById("userGuess").value = "";
+      }
+
+      /*
+      Limiting the secret number to a range of 1 to 10 while giving the user only three attempts makes the game challenging yet feasible.
+      It offers:
+      - Balance of difficulty and playability: With a range of 10 numbers, there are enough possible values to make the game challenging
+      but not extremely difficult. The user has a fair chance of guessing the correct number within three attempts,
+      especially with guidance on whether their guess is too high or too low.
+      - Simple and engaging: A smaller range like 1 to 10 keeps the game simple and easy to understand for players,
+      making it more accessible and enjoyable for a wide range of audiences, including younger players or those who are new to games.
+      - Quick gameplay: Giving the user only three attempts encourages quick decision-making and promotes replayability
+      when they want to try again after winning or losing. This makes it suitable as a casual, time-pass entertainment option.
+      */
+
+      // Validate if the user's guess is a valid number between 1 and 10
+      function isValidGuess(guess) {
+        return guess >= 1 && guess <= 10;
+      }
+
+      // Main game logic that handles user guesses
+      function guessNumber() {
+        const userGuess = parseInt(document.getElementById("userGuess").value);
+        const message = document.getElementById("message");
+
+        // Check if the user's guess is valid before proceeding with the game logic
+        if (isValidGuess(userGuess)) {
+          // Check if the user still has attempts left
+          if (attempts > 0) {
+            // If the user's guess is correct
+            if (userGuess == secretNumber) {
+              message.innerHTML =
+                "You answered " + userGuess + ". This is the correct answer!";
+              attempts = 0;
+            } else {
+              // If the user's guess is incorrect
+              attempts--;
+
+              // Display guidance on whether the user's guess was too high or too low, and update remaining attempts
+              if (attempts > 0) {
+                if (userGuess > secretNumber) {
+                  message.innerHTML = `You answered ${userGuess}. The correct answer is lower. You have ${attempts} attempt(s) left.`;
+                } else {
+                  message.innerHTML = `You answered ${userGuess}. The correct answer is higher. You have ${attempts} attempt(s) left.`;
+                }
+              } else {
+                // If the user has no more attempts left
+                message.innerHTML = `You're out of attempts! The secret number was ${secretNumber}. Press 'Reset Game' to play again.`;
+              }
+            }
+          }
+        } else {
+          // If the input is not valid, display an error message without reducing attempts
+          message.innerHTML = "Please enter a valid number between 1 and 10.";
+        }
+      }
+
+      // Reset game function that initializes game state to start over
+      function resetGame() {
+        initGame();
+      }
+
+      // Call initGame() to set up initial game state when page loads
+      initGame();
+    </script>
+  </body>
+</html>
